@@ -8,7 +8,7 @@ async function bootstrap() {
 
   app.use(
     session({
-      secret: 'secretpw',
+      secret: 'secretpw', // ini nanti taroh di env
       resave: false,
       saveUninitialized: false,
       cookie: { maxAge: 360000 },
